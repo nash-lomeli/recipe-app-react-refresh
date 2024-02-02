@@ -1,0 +1,145 @@
+.css-b7gm3f {
+    position: relative;
+    margin-bottom: 27px;
+}
+
+.css-pca8m {
+    margin-left: 0;
+}
+
+.css-1fu7xko  {
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.css-1hyfx7x {
+    display: none;
+}
+
+img {
+    border-style: none;
+}
+
+.css-fqc6yd {
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: opacity 0.4s linear;
+    margin-bottom: 16px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.css-fqc6yd:hover::after {
+    opacity: 1;
+}
+
+.css-fqc6yd::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at 50% 50%,rgba(0,0,0,0.0),rgba(0,0,0,0.0) 44%,rgba(0,0,0,0.2));
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.css-1b02yrr {
+    height: auto;
+    padding-bottom: 61.1%;
+}
+
+.css-oxr0z6 {
+    position: absolute;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    top: 5px;
+    right: 5px;
+}
+
+.css-4h9p7m {
+    position: relative;
+    padding-top: 16px;
+}
+
+.css-xmvqec {
+    font-size: 14px;
+    letter-spacing: -0.48px;
+    font-weight: 600;
+    line-height: normal;
+    color: #2D3138;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+.css-1rr4qq7 {
+    flex: 1;
+}
+
+.css-16fyabd {
+    background-color: rgba(151,156,166,0.1);
+    color: #979CA6;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    padding: 7px 14px;
+    display: inline-flex;
+    align-items: center;
+    margin: -3px 0 -3px 8px;
+    align-self: flex-start;
+}
+
+.css-kwzqkl {
+    font-size: 12px; 
+    letter-spacing: 0.14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 10px;
+    color: #8F95A3;
+}
+
+.css-1lzl3v6 {
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 22px;
+    color: #8F95A3;
+    display: flex;
+    cursor: pointer;
+}
+
+.css-9dtuu6 {
+    display: inline-block;
+    width: 5px;
+    height: 14px;
+}
+
+.css-9dtuu6 > .MuiIcon-root {
+    font-size: 10px;
+}
+
+.css-oxr0z6 > .MuiIconButton-root {
+    position: absolute;
+    padding: 0px;
+    outline: none;
+  }
+  
+  .likeButtonIcon {
+    color: red;
+  }
+  
+  .unlikeButtonIcon {
+    color: white;
+  }

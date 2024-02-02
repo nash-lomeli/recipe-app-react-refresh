@@ -1,0 +1,11 @@
+.instructionIngredientList__body > span {
+    /* color: #4a4a4a;
+    font-size: .2rem;
+    font-weight: 100;*/
+    padding-left: 15px;
+    margin: 6px 0 8px;
+    color: #707070;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 300;
+}

@@ -1,0 +1,33 @@
+.RecipeInstructions {
+    padding-top: 20px;
+}
+
+.RecipeInstructions__header > h3 {
+    font-size: 2rem;
+    line-height: 2;
+    color: #232323;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.recipeInstructions__subHeader {
+    padding-top: 0px;
+}
+
+.recipeInstructions__subHeader > button {
+    font-size: .6rem;
+    font-weight: 400;
+    text-align: center;
+    background:none; 
+    border:none;
+    margin-top: -10px;
+    padding: 0px 0px 10px 0px;
+    color: grey;
+    outline: none;
+    box-shadow: none;
+}
+
+.recipeInstructions__subHeader > button:focus {
+    outline: none;
+    box-shadow: none;
+}

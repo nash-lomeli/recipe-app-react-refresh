@@ -1,0 +1,19 @@
+.userPreview_usernameLink {
+    padding: 5px 0px 5px 10px;
+}
+
+.userPreview_usernameLink > button {
+    background:none; 
+    border:none;
+    outline: none;
+    box-shadow: none;
+    color: black;
+    font-size: 13px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.userPreview_usernameLink > button:focus {
+    outline: none;
+    box-shadow: none;
+}

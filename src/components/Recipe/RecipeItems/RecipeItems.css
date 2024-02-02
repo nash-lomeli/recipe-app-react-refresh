@@ -1,0 +1,9 @@
+.recipeItems {
+    padding-top: 20px;
+}
+.recipeItems__header > h3 {
+    font-size: 2rem;
+    line-height: 2;
+    color: #232323;
+    margin-bottom: 0px;
+}

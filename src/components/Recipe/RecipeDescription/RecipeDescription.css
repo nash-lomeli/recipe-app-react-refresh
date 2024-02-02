@@ -1,0 +1,17 @@
+.RecipeDescription__header > h3 {
+    font-size: 2rem;
+    line-height: 2;
+    color: #232323;
+}
+
+.RecipeDescription__text > span {
+    /* font-size: 14px;
+    line-height: 1.5;
+    color: #4a4a4a;
+    font-weight: 100; */
+    margin: 6px 0 8px;
+    color: #707070;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+}

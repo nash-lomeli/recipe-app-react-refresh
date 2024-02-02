@@ -1,0 +1,7 @@
+.listErrors__item > li {
+    margin: 6px 0 8px;
+    color: #707070;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 500;
+}

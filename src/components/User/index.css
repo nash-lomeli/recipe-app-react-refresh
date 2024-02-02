@@ -1,0 +1,18 @@
+.userSettings__header {
+    padding: 20px;
+}
+.userSettings__header > h3 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.userSettings__header > span {
+    font-size: small;
+    color: grey;
+    text-align: center;
+}
+
+.userSettings__logoutButton {
+    padding-top: 20px;
+}

@@ -1,0 +1,42 @@
+.recipeView {
+    padding-bottom: 36px;
+}
+.recipeView__header {
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(217, 219, 224, 0.5);
+    padding-bottom: 16px;
+    line-height: normal;
+}
+
+.recipeView__headerBorder {
+    position: absolute;
+    top: 2px;
+    left: calc(0% - 0px);
+    transition: left 300ms cubic-bezier(0.86, 0, 0.07, 1) 0s;
+    width: 32px;
+    height: 100%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.9);
+    z-index: 200;
+}
+
+.recipeView__title > h2 {
+    font-size: 24px;
+    letter-spacing: -1.16px;
+    font-weight: 600;
+    color: rgb(45, 49, 56);
+    line-height: normal;
+    margin-bottom: 12px;
+}
+
+.recipeView__subtitle > span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    color: rgb(143, 149, 163);
+    letter-spacing: -0.1px;
+}
+
+.recipeView__recipeList {
+    margin-top: 31px;
+}

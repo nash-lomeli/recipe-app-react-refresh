@@ -1,0 +1,65 @@
+.instructionsList__pair {
+    padding-bottom: 20px;
+    margin-left: 0px !important;
+}
+
+.instructionsList__order {
+    font-size: 2.5rem;
+    color: grey;
+    line-height: 1.2;
+    font-weight: 200;
+    width: 20px;
+}
+
+.instructionsList__order > button {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 200;
+    background:none;
+    border:none;
+    height: 50px;
+    width: 50px;
+    outline: none;
+    box-shadow: none;
+}
+
+.instructionsList__order > button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.completeButton {
+    color: grey;
+}
+
+.uncompleteButton {
+    color: goldenrod;
+}
+
+.instructionsList__order {
+    padding-right: 0px;
+}
+
+.instructionsList__body {
+    padding-left: 0px;
+}
+
+.instructionsList__body > span {
+    margin: 6px 0 8px;
+    color: #707070;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.instructionsList__complete {
+    background:none;
+    border:none;
+    outline: none;
+    box-shadow: none;
+    padding-top: 0px;
+}
+
+.instructionsList__complete:focus {
+    outline: none;
+}

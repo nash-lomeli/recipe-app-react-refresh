@@ -1,0 +1,30 @@
+.login {
+    margin: 20px;
+}
+
+.login__header > h3 {
+    font-size: 2rem;
+    line-height: 2;
+    color: #2D3138;
+}
+
+.login__register {
+    padding: 20px 0px 20px 2px;
+}
+
+.login__register > span {
+    color: #2D3138;
+    font-size: .9rem;
+    font-weight: 200;
+}
+
+.login__link {
+    outline: none;
+    color: #2D3138;
+    font-size: 14px;
+}
+
+.login__link:hover {
+    outline: none;
+    color: #2D3138;
+}

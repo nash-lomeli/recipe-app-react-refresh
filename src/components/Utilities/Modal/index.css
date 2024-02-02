@@ -1,0 +1,16 @@
+/* .modal_design .modal-content{
+    background-color: #000;
+    color: #fff;
+ } */
+
+
+.modal_design .modal-title{
+    color: #4a4a4a;
+    font-size: .9rem;
+    font-weight: 200;
+}
+
+.modal_design .modal-header{
+    padding: 10px 16px 10px 15px;
+    align-items: center;
+}
