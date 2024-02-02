@@ -13,7 +13,7 @@ import Register from './Auth/Register/Register'
 import ModalContainer from './Modal'
 import UserSettings from './User'
 import agent from '../agent'
-import { Switch, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import history from './Utilities/history';
 import GuardedRoute from './Utilities/guardedRoute'
 
@@ -67,7 +67,7 @@ class App extends Component {
           <Header 
             currentUser={this.props.currentUser}
             onSubmitForm={this.props.onSubmitForm}/>
-          <Switch>
+          <Routes>
             <Route path='/profiles/:id' exact component={Profile}/>
             <Route path='/profiles/:id/favorited' exact component={ProfileLiked}/>
             <Route path='/profiles/:id/feed' exact component={ProfileFeed} currentUser={this.props.currentUser}/>
@@ -77,7 +77,7 @@ class App extends Component {
             <Route path='/results' exact component={SearchResult}/>
             <Route path='/recipes/:slug' exact component={Recipe}/>
             <Route path='/' exact component={Home}/>
-          </Switch>  
+          </Routes>  
           <ModalContainer />
       </div>
     )

@@ -5,8 +5,8 @@ import { connect } from 'react-redux'
 import agent from '../../../agent'
 import { Link } from 'react-router-dom'
 
-import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder'
-import IconButton from '@material-ui/core/IconButton';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import IconButton from '@mui/material/IconButton';
 import Image from 'react-bootstrap/Image'
 const LIKED_CLASS = 'likeButtonIcon';
 const NOT_LIKED_CLASS = 'unlikeButtonIcon';

@@ -10,10 +10,10 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 
-import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
-import FavoriteBorderOutlinedIcon from '@material-ui/icons/FavoriteBorderOutlined';
-import RestaurantOutlinedIcon from '@material-ui/icons/RestaurantOutlined';
-import BookOutlinedIcon from '@material-ui/icons/BookOutlined';
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import RestaurantOutlinedIcon from '@mui/icons-material/RestaurantOutlined';
+import BookOutlinedIcon from '@mui/icons-material/BookOutlined';
 import agent from '../../../agent'
 
 

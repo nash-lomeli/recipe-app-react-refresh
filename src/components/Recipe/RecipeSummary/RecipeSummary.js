@@ -9,9 +9,9 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder'
-import BeenhereOutlinedIcon from '@material-ui/icons/BeenhereOutlined';
-import IconButton from '@material-ui/core/IconButton';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import BeenhereOutlinedIcon from '@mui/icons-material/BeenhereOutlined';
+import IconButton from '@mui/material/IconButton';
 import { LinkContainer } from 'react-router-bootstrap';
 import { BlackTooltip } from '../../Utilities/tooltip'
 

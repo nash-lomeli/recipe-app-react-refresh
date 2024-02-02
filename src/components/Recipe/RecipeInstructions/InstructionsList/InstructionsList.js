@@ -9,8 +9,8 @@ import InstructionIngredientList from '../InstructionIngredientList/InstructionI
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 
-import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
-import CheckCircleOutlinedIcon from '@material-ui/icons/CheckCircleOutlined';
+import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
+import CheckCircleOutlinedIcon from '@mui/icons-material/CheckCircleOutlined';
 
 const mapDispatchToProps = dispatch => ({
     completeInstruction: id => 
