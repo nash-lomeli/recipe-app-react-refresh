@@ -3,9 +3,10 @@ import _superagent from 'superagent'
 
 const superagent = superagentPromise(_superagent, global.Promise)
 
-const API_ROOT = 'https://api.tryzesty.com/api'
+const API_ROOT = 'http://127.0.0.1:8000/api'
 
 const responseBody = res => {
+  console.log('responseBody',res.body)
   return res.body
 }
 
@@ -76,8 +77,10 @@ const Recipes = {
     requests.get(`/recipes`),
   search: query => 
     requests.get(`/recipes/q?search=${query}`),
-  get: slug =>
-    requests.get(`/recipes/${slug}/`),
+  get: slug => {
+    console.log('const Recipes get: slug',slug)
+    return requests.get(`/recipes/${slug}/`)
+  },
   byAuthor: id =>
     requests.get(`/recipes?author=${id}`),
   byLiked: id =>

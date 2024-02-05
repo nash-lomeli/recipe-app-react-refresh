@@ -31,17 +31,34 @@ const mapDispatchToProps = dispatch => ({
 })
 
 class Recipe extends Component {
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
+
+        // console.log('UNSAFE_componentWillMount - this.props',this.props)
+        // console.log('UNSAFE_componentWillMount - agent.Recipes.get',agent.Recipes.get('recipe-5-mek8lg'))
+        // console.log('UNSAFE_componentWillMount - this.props.onLoad(agent.Recipes.get(this.props.match.params.slug)',this.props.onLoad(agent.Recipes.get('recipe-5-mek8lg')))
+        //console.log('UNSAFE_componentWillMount - this.props',agent.Recipes.all())
+        // this.props.onLoad(agent.Recipes.get('recipe-5-mek8lg'))
+        // \\this.props.onLoad(agent.Recipes.get(this.props.recipe.slug))
+
         this.props.onLoad(agent.Recipes.get(this.props.match.params.slug))
+        // console.log('UNSAFE_componentWillMount this.props.onLoad',this.props.onLoad(agent.Recipes.all()))
     }
 
-    componentWillUnmount() {
+    UNSAFE_componentWillUnmount() {
         this.props.onUnload()
     }
 
     render() {
+        console.log('render()',this.props)
+
+
+
         if (!this.props.recipe) {
-            return null
+            return (
+                <div>
+                    loading..
+                </div>
+            )
         }
 
         return (

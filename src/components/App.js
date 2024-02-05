@@ -13,7 +13,7 @@ import Register from './Auth/Register/Register'
 import ModalContainer from './Modal'
 import UserSettings from './User'
 import agent from '../agent'
-import { Routes, Route } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 import history from './Utilities/history';
 import GuardedRoute from './Utilities/guardedRoute'
 
@@ -67,7 +67,16 @@ class App extends Component {
           <Header 
             currentUser={this.props.currentUser}
             onSubmitForm={this.props.onSubmitForm}/>
-          <Routes>
+          <Switch>
+            {/* <Route path='/profiles/:id' exact element={<Profile/>}/>
+            <Route path='/profiles/:id/favorited' exact element={<ProfileLiked/>}/>
+            <Route path='/profiles/:id/feed' exact element={<ProfileFeed/>} currentUser={this.props.currentUser}/>
+            <Route path='/login' exact element={<Login/>}/>
+            <Route path='/register' exact element={<Register/>}/>
+            <Route path='/settings' exact element={<UserSettings/>} currentUser={this.props.currentUser}/>
+            <Route path='/results' exact element={<SearchResult/>}/>
+            <Route path='/recipes/:slug' exact element={<Recipe/>}/>
+            <Route path='/' element={<Home/>}/> */}
             <Route path='/profiles/:id' exact component={Profile}/>
             <Route path='/profiles/:id/favorited' exact component={ProfileLiked}/>
             <Route path='/profiles/:id/feed' exact component={ProfileFeed} currentUser={this.props.currentUser}/>
@@ -77,7 +86,7 @@ class App extends Component {
             <Route path='/results' exact component={SearchResult}/>
             <Route path='/recipes/:slug' exact component={Recipe}/>
             <Route path='/' exact component={Home}/>
-          </Routes>  
+          </Switch>  
           <ModalContainer />
       </div>
     )

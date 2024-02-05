@@ -55,7 +55,7 @@ const mapDispatchToProps = dispatch => ({
 })
 
 const RecipeSummary = props => {
-    console.log('RecipeSummary', props)
+
     const recipe = props.recipe
     const currentUser = props.currentUser
 
@@ -88,8 +88,8 @@ const RecipeSummary = props => {
                                 recipe.RecipeImage[0].image && 
                                     <>
                                         <img className="recipeSummary__left__image_background" src={recipe.RecipeImage[0].image}/>
-                                        {/* <div style={{backgroundImage: `url(${recipe.RecipeImage[0].image})`, opacity: 1}} 
-                                            className="recipeSummary__left__image_background"></div> */}
+                                        <div style={{backgroundImage: `url(${recipe.RecipeImage[0].image})`, opacity: 1}} 
+                                            className="recipeSummary__left__image_background"></div>
                                     </>
                                 }
                             </div>
