@@ -102,7 +102,7 @@ class SettingsForm extends Component {
                         onChange={this.updateState('street_address')}
                         />
                     </Form.Group>
-                    <Form.Row>
+                    <Form.Group as={Row}>
                         <Form.Group as={Col} controlId="formGridCity">
                         <Form.Label>City</Form.Label>
                         <Form.Control
@@ -130,7 +130,7 @@ class SettingsForm extends Component {
                                 onChange={this.updateState('postal_code')}
                                 />
                         </Form.Group>
-                    </Form.Row>
+                    </Form.Group>
                 </>
              )
         }
@@ -140,7 +140,7 @@ class SettingsForm extends Component {
                 <Row>
                     <Col>
                         <Form onSubmit={this.submitForm}>
-                            <Form.Row>
+                            <Form.Group as={Row}>
                                 <Form.Group as={Col} controlId="formGridEmail">
                                     <Form.Label>Username</Form.Label>
                                     <Form.Control
@@ -159,7 +159,7 @@ class SettingsForm extends Component {
                                         onChange={this.updateState('password')}
                                         />
                                 </Form.Group>
-                            </Form.Row>
+                            </Form.Group>
                             <Form.Group controlId="formGridDescription">
                             <Form.Label>Description</Form.Label>
                                 <Form.Control
