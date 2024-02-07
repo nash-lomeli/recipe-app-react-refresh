@@ -3,7 +3,8 @@ import _superagent from 'superagent'
 
 const superagent = superagentPromise(_superagent, global.Promise)
 
-const API_ROOT = 'http://127.0.0.1:8000/api'
+const API_ROOT = 'https://recipe-app-api-refresh-535-92934bae30c0.herokuapp.com/api'
+//const API_ROOT = 'http://127.0.0.1:8000/api'
 
 const responseBody = res => {
   console.log('responseBody',res.body)
