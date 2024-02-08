@@ -15,7 +15,8 @@ import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlin
 import RestaurantOutlinedIcon from '@mui/icons-material/RestaurantOutlined';
 import BookOutlinedIcon from '@mui/icons-material/BookOutlined';
 import agent from '../../../agent'
-
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
 
 const mapDispatchToProp = dispatch => ({
     follow: id => 
@@ -64,7 +65,9 @@ const BasicInfo = props => {
     const profile = props.profile
     
     if (!profile) {
-        return null
+        <Box sx={{ display: 'flex' }}>
+            <CircularProgress />
+        </Box>
     }
 
     return (
@@ -91,7 +94,9 @@ const MerchantInfo = props => {
     const profile = props.profile
 
     if (!profile.is_merchant) {
-        return null
+        <Box sx={{ display: 'flex' }}>
+            <CircularProgress />
+         </Box>
     }
 
     return (

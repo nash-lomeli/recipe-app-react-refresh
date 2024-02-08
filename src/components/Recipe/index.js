@@ -12,6 +12,8 @@ import RecipeNote from './RecipeNote/RecipeNote'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
 
 const mapStateToProps = state => ({
     ...state.recipe,
@@ -56,7 +58,9 @@ class Recipe extends Component {
         if (!this.props.recipe) {
             return (
                 <div>
-                    loading..
+                        <Box sx={{ display: 'flex' }}>
+                            <CircularProgress />
+                        </Box>
                 </div>
             )
         }

@@ -4,12 +4,16 @@ import RecipePreviewV2 from '../../Utilities/RecipePreviewV2/RecipePreviewV2'
 
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
 
 const ProfileRecipeList = props => {
     if (!props.recipes) {
         return (
             <div>
-                loading..
+                <Box sx={{ display: 'flex' }}>
+                    <CircularProgress />
+                </Box>
             </div>
         )
     }

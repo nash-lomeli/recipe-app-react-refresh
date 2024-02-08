@@ -3,6 +3,8 @@ import './RecipeView.css'
 
 import RecipeList from '../RecipeList/RecipeList'
 import { connect } from 'react-redux'
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
 
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -17,7 +19,11 @@ const RecipeView = props => {
     if (!props.curated_collections) {
         return (
             <div>
-                loading..
+                    <Row>
+                        <Box sx={{ display: 'flex' }}>
+                            <CircularProgress />
+                        </Box>
+                    </Row>
             </div>
         )
     }

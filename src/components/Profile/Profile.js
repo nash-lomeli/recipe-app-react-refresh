@@ -12,6 +12,8 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
 
 const mapStateToProps = state => ({
     profile: state.profile.profile,
@@ -104,7 +106,13 @@ class Profile extends Component {
 
     render() {
         if (!this.props.profile) {
-            return null
+            return (
+                <div>
+                        <Box sx={{ display: 'flex' }}>
+                            <CircularProgress />
+                        </Box>
+                </div>
+            )
         }
 
         return (
